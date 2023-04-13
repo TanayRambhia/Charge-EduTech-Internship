@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Who we are and What we do.</p>
+  <p>The work of a trekker involves planning and carrying out multi-day hikes or expeditions through natural environments. 
+    This includes selecting the route, preparing and carrying necessary gear and supplies, navigating the terrain, and ensuring safety for themselves and any companions.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\user\Desktop\Tanay\Internship\Charge Edu Tech\Task 1\ABC1.jpeg" alt="Jeeva" style="width:100%">
+      <div class="container">
+        <h2>Jeeva Jain</h2>
+        <p class="title">CEO & Founder</p>
+        <p>The CEO (Chief Executive Officer) is the highest-ranking executive in a company, responsible for making strategic decisions, setting goals and objectives, and ensuring that the organization is functioning effectively and efficiently. </p>
+        <p>jeeva123@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\user\Desktop\Tanay\Internship\Charge Edu Tech\Task 1\DEF1.jpeg" alt="Vayu" style="width:100%">
+      <div class="container">
+        <h2>Vayu Khan </h2>
+        <p class="title">Art Director</p>
+        <p>An art director is responsible for overseeing the visual design and 
+          creative direction of various types of media, such as advertisements, magazines, movies, video games, and other forms of digital media.</p>
+        <p>vayu81@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\user\Desktop\Tanay\Internship\Charge Edu Tech\Task 1\GHI1.jpeg" alt="Tanay" style="width:100%">
+      <div class="container">
+        <h2>Tanay Rambhia</h2>
+        <p class="title">Designer</p>
+        <p> A designer's work can range from creating logos and branding materials, to developing websites and user interfaces, use their creative skills,
+           to designing packaging and product designs.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
